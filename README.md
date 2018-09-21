@@ -36,32 +36,3 @@ $ pod install
 * https://github.com/loopwxservices/WXKDarkSky
 
 My email: poverty1990@gmail.com
-![](Screenshots/DesignCircle.png)
-
-The projects includes:
-  + Domain and Platform frameworks present Business entities and Use cases
-  + SearchCityRepository, AERISWeatherRepository, DarkSkyRepository are to query data from Vendors (https://www.aerisweather.com, http://forecast.io, Google Places) and convert/tranform to Business Domain
-  + WeatherUI implements application UI components
-  + Beside that, There are unit tests
-  
-  Demo Gif:
-  
-  ![](Screenshots/demo.gif)
-  
-## Requirements
-* Xcode 9.0
-* Swift 4.0
-## Installation
-
-### [CocoaPods](https://guides.cocoapods.org/using/using-cocoapods.html)
-
-```bash
-$ pod install
-```
-
-## References
-* https://8thlight.com/blog/uncle-bob/2012/08/13/the-clean-architecture.html
-* https://github.com/sergdort/CleanArchitectureRxSwift
-* https://github.com/loopwxservices/WXKDarkSky
-
-My email: poverty1990@gmail.com
