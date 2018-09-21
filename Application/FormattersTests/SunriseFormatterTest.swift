@@ -1,0 +1,20 @@
+import Foundation
+import XCTest
+@testable import Weather
+
+class SunriseFormatterTest : XCTestCase {
+
+    func testStringFromValue() {
+        XCTAssertEqual(SunriseFormatter.sharedInstance.string(from: nil), "")
+
+        let dateComponents = DateComponents(calendar: Calendar.current,
+                                            timeZone: TimeZone.current,
+                                            year: 2020,
+                                            month: 12,
+                                            day: 30,
+                                            hour: 6,
+                                            minute: 59,
+                                            second: 59)
+        XCTAssertEqual(SunriseFormatter.sharedInstance.string(from: dateComponents.date), "06:59")
+    }
+}

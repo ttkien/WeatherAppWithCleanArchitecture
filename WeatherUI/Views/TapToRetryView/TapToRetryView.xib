@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="TapToRetryView" customModule="WeatherUI" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xjM-ya-pIJ">
+                    <rect key="frame" x="81" y="223" width="213" height="261"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_crash_file" translatesAutoresizingMaskIntoConstraints="NO" id="ivm-ka-iLu">
+                            <rect key="frame" x="86" y="0.0" width="40" height="54"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="40" id="JoC-dd-W2C"/>
+                                <constraint firstAttribute="height" constant="54" id="KCl-rD-gma"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hệ thống xảy ra lỗi. " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZGC-4k-Zag" customClass="PrimaryBodyDarkLabel" customModule="WeatherUI" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="62" width="213" height="33"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="33" id="QsO-wN-s9l"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p7d-h1-LbT">
+                            <rect key="frame" x="31" y="195" width="150" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="44" id="cpe-AC-G9V"/>
+                                <constraint firstAttribute="width" constant="150" id="i9d-kO-VsI"/>
+                            </constraints>
+                            <state key="normal" title="Thử lại"/>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="p7d-h1-LbT" firstAttribute="centerX" secondItem="xjM-ya-pIJ" secondAttribute="centerX" id="9bX-pQ-6AK"/>
+                        <constraint firstItem="ZGC-4k-Zag" firstAttribute="leading" secondItem="xjM-ya-pIJ" secondAttribute="leading" id="Dyp-sV-sfx"/>
+                        <constraint firstAttribute="trailing" secondItem="ZGC-4k-Zag" secondAttribute="trailing" id="G8A-Md-GA8"/>
+                        <constraint firstItem="ivm-ka-iLu" firstAttribute="top" secondItem="xjM-ya-pIJ" secondAttribute="top" id="HU5-CA-LHH"/>
+                        <constraint firstItem="ivm-ka-iLu" firstAttribute="centerX" secondItem="xjM-ya-pIJ" secondAttribute="centerX" id="VCL-SE-Cpg"/>
+                        <constraint firstItem="p7d-h1-LbT" firstAttribute="top" secondItem="ZGC-4k-Zag" secondAttribute="bottom" constant="100" id="olZ-1c-ASf"/>
+                        <constraint firstAttribute="width" constant="213" id="p9F-bh-1tW"/>
+                        <constraint firstAttribute="height" constant="261" id="slu-Yf-57l"/>
+                        <constraint firstItem="ZGC-4k-Zag" firstAttribute="top" secondItem="ivm-ka-iLu" secondAttribute="bottom" constant="8" id="xad-r4-dgj"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="xjM-ya-pIJ" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="50h-iy-Hts"/>
+                <constraint firstItem="xjM-ya-pIJ" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" constant="20" id="ekG-fk-rau"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="retryButton" destination="p7d-h1-LbT" id="eV0-Ue-RtN"/>
+            </connections>
+            <point key="canvasLocation" x="26.5" y="51.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_crash_file" width="40" height="54"/>
+    </resources>
+</document>
