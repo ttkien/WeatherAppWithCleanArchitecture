@@ -2,10 +2,6 @@
 This project is a demonstration about how we apply Clean Architecture (https://8thlight.com/blog/uncle-bob/2012/08/13/the-clean-architecture.html) with RxSwift.
 
 The main idea of Clean Architecture is to focus on protecting Business layer from Technology(Frameworks, Tools or Vendors) and User Interface. In the other words, changes from Technology or UI DO NOT impact to Business
-# WeatherAppWithCleanArchitecture
-This project is a demonstration about how we apply Clean Architecture (https://8thlight.com/blog/uncle-bob/2012/08/13/the-clean-architecture.html) with RxSwift.
-
-The main idea of Clean Architecture is to focus on protecting Business layer from Technology(Frameworks, Tools or Vendors) and User Interface. In the other words, changes from Technology or UI DO NOT impact to Business
 
 ![](Screenshots/DesignCircle.png)
 
